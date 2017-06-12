@@ -1,6 +1,6 @@
 {
   "name": "puppetlabs/mount_iso",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Puppet Labs",
   "summary": "Mount ISO images and ensure the drive letter they are mounted to",
   "license": "Apache-2.0",

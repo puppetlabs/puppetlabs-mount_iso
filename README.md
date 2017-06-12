@@ -1,14 +1,20 @@
 # mount_iso
 
-#### Table of Contents
+## Table of Contents
 
 1. [Overview](#overview)
+
 2. [Module Description - Mount ISO Images on Windows 8+ / 2012+](#module-description)
+
 3. [Setup - The basics of getting started with mount_iso](#setup)
+
     * [What mount_iso affects](#what-mount_iso-affects)
+
 4. [Usage - Configuration options and additional functionality](#usage)
+
 5. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
-5. [Limitations - OS compatibility, etc.](#limitations)
+
+6. [Limitations - OS compatibility, etc.](#limitations)
 
 ## Overview
 
@@ -27,7 +33,8 @@ Requires PowerShell which is installed by default for any newer versions of Wind
 ## Usage
 
 ### To mount the SQLServer.iso on drive letter 'H'
-```
+
+``` puppet
 mount_iso { 'C:\MyStagingDir\SQLServer.iso':
   drive_letter => 'H',
 }
@@ -40,11 +47,13 @@ mount_iso { 'C:\MyStagingDir\SQLServer.iso':
 ### Defined Types
 
 #### mount_iso
+
 * `source`: The location of the ISO or image that you would like mounted: Defaults to title
+
 * `drive_letter`: The desired drive letter you want the image to mounted against
 
 ## Limitations
 
 * Only works on Windows 2012, 2012 R2, 8 and 8.1
-* If the drive is already occupied by some other volume it will fail to mount the image in that location but will allow it to
-be mounted on the first available drive letter.
+
+* If the drive is already occupied by some other volume it will fail to mount the image in that location but will allow it to be mounted on the first available drive letter.

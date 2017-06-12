@@ -17,29 +17,26 @@
     {
       "operatingsystem": "Windows",
       "operatingsystemrelease": [
+        "Server 2008 R2",
         "Server 2012",
-        "Server 2012 R2"
+        "Server 2012 R2",
+        "8",
+        "10"
       ]
     }
   ],
   "requirements": [
     {
-      "name": "pe",
-      "version_requirement": ">= 3.3.0 < 2015.3.0"
-    },
-    {
       "name": "puppet",
-      "version_requirement": ">= 3.4.0 < 5.0.0"
+      "version_requirement": ">= 4.7.0 < 5.0.0"
     }
   ],
   "dependencies": [
     {
-      "name": "puppetlabs-stdlib",
-      "version_requirement": "4.x"
+      "name": "puppetlabs-stdlib"
     },
     {
-      "name": "puppetlabs-powershell",
-      "version_requirement": "1.x"
+      "name": "puppetlabs-powershell"
     }
   ]
 }

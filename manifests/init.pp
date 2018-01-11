@@ -21,11 +21,12 @@
 #
 # Travis Fields
 #
-define mount_iso ($drive_letter, $source = $title){
+define mount_iso (
+  Pattern[/^[a-zA-Z]$/]  $drive_letter,
+  Optional[Stdlib::Absolutepath] $source = $title
+){
 
   if $::osfamily != 'windows' { fail('Unsupported OS') }
-  validate_re($drive_letter, '^[a-zA-Z]$', 'Drive letter must only be a single character')
-  validate_absolute_path($source)
 
   exec{ "Mount-Iso-${source}":
     provider => powershell,

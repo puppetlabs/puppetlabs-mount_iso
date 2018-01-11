@@ -21,10 +21,6 @@
 #
 # Travis Fields
 #
-# === Copyright
-#
-# Copyright 2014 Your name here, unless otherwise noted.
-#
 define mount_iso ($drive_letter, $source = $title){
 
   if $::osfamily != 'windows' { fail('Unsupported OS') }

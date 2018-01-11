@@ -9,7 +9,7 @@ RSpec.describe 'mount_iso' do
   it 'should contain exec for mount' do
     should contain_exec("Mount-Iso-#{title}").with(
                {
-                   'command' => "Mount-DiskImage -ImagePath '#{title}'",
+                   'command' => "Mount-DiskImage -ImagePath '#{title}' -ErrorAction 'Stop'",
                    'onlyif' => "if ( (Get-DiskImage -ImagePath '#{title}').Attached ){ exit 1 } else { exit 0 }",
                }
            )

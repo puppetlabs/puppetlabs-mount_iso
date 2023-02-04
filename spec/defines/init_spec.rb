@@ -4,7 +4,7 @@ RSpec.describe 'mount_iso' do
   let(:params) do
     { drive_letter: 'H' }
   end
-  let(:facts) { { osfamily: 'windows' } }
+  let(:facts) { { os: { family: 'windows' } } }
 
   it 'contains exec for mount' do
     is_expected.to contain_exec("Mount-Iso-#{title}").with(

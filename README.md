@@ -54,6 +54,6 @@ mount_iso { 'C:\MyStagingDir\SQLServer.iso':
 
 ## Limitations
 
-* Only works on Windows 2012, 2012 R2, 8 and 8.1
+* Only works on Windows 2012+.
 
 * If the drive is already occupied by some other volume it will fail to mount the image in that location but will allow it to be mounted on the first available drive letter.

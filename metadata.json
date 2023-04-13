@@ -42,7 +42,7 @@
     "iso",
     "powershell"
   ],
-  "pdk-version": "1.15.0",
+  "pdk-version": "2.7.0",
   "template-url": "https://github.com/puppetlabs/pdk-templates#1.15.0",
-  "template-ref": "1.15.0-0-g0bc522e"
+  "template-ref": "tags/1.15.0-0-g0bc522e"
 }

@@ -25,7 +25,7 @@ define mount_iso (
   Pattern[/^[a-zA-Z]$/]  $drive_letter,
   Optional[Stdlib::Absolutepath] $source = $title
 ) {
-  if $facts['os']['family'] != 'windows' { fail('Unsupported OS') }
+  if $facts['os']['name'] != 'windows' { fail('Unsupported OS') }
 
   exec { "Mount-Iso-${source}":
     provider => powershell,

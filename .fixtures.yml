@@ -1,10 +1,10 @@
 fixtures:
-  forge_modules:
-    stdlib:
-      repo: "puppetlabs/stdlib"
-      ref: "4.24.0"
-    powershell:
-      repo: "puppetlabs/powershell"
-      ref: "2.1.3"
+  repositories:
+    stdlib: 'https://github.com/puppetlabs/puppetlabs-stdlib.git'
+    powershell: 'https://github.com/puppetlabs/puppetlabs-powershell.git'
+    puppet_agent:
+      repo: 'https://github.com/puppetlabs/puppetlabs-puppet_agent.git'
+      ref: v4.13.0
+    provision: 'https://github.com/puppetlabs/provision.git'
   symlinks:
     mount_iso: "#{source_dir}"

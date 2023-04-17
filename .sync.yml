@@ -3,6 +3,10 @@ NOTICE:
   copyright_holders:
     - name: 'Puppet, Inc.'
       begin: 2013
+".gitlab-ci.yml":
+  delete: true
+".rubocop.yml":
+  include_todos: true
 Gemfile:
   optional:
     ":development":
@@ -16,3 +20,7 @@ Gemfile:
   unmanaged: false
 .github/workflows/release.yml:
   unmanaged: false
+.travis.yml:
+  delete: true
+appveyor.yml:
+  delete: true

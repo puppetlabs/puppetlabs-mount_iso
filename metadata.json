@@ -42,6 +42,6 @@
     "powershell"
   ],
   "pdk-version": "2.7.0",
-  "template-url": "https://github.com/puppetlabs/pdk-templates#1.15.0",
-  "template-ref": "tags/1.15.0-0-g0bc522e"
+  "template-url": "https://github.com/puppetlabs/pdk-templates#main",
+  "template-ref": "heads/main-0-ge5b0114"
 }

@@ -84,3 +84,6 @@ Style/Documentation:
   - spec/**/*
 Style/WordArray:
   EnforcedStyle: brackets
+RSpec/NamedSubject:
+  Exclude:
+  - spec/defines/init_spec.rb

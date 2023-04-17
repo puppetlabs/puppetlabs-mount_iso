@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 RSpec.describe 'mount_iso' do
   let(:title) { 'c:\Users\TestUser\mysystem.iso' }

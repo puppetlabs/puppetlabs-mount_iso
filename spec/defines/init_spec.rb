@@ -17,7 +17,7 @@ RSpec.describe 'mount_iso' do
 
   it {
     expect(subject).to contain_exec('Change-Mount-Letter-H').with(
-      'command' => "gwmi win32_volume -Filter \"Label = '\$((Get-DiskImage -ImagePath '#{title}' | Get-Volume).FileSystemLabel)'\" | swmi -Arguments @{DriveLetter=\"H:\"}",
+      'command' => "gwmi win32_volume -Filter \"Label = '$((Get-DiskImage -ImagePath '#{title}' | Get-Volume).FileSystemLabel)'\" | swmi -Arguments @{DriveLetter=\"H:\"}",
       'onlyif' => "if((Get-DiskImage '#{title}' | Get-Volume).DriveLetter -ieq 'H' ){ exit 1 } exit 0",
     )
   }

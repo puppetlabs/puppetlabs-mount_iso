@@ -25,6 +25,8 @@ group :development do
   gem "fast_gettext", '1.1.0',                     require: false if Gem::Version.new(RUBY_VERSION.dup) < Gem::Version.new('2.1.0')
   gem "fast_gettext",                              require: false if Gem::Version.new(RUBY_VERSION.dup) >= Gem::Version.new('2.1.0')
   gem "rb-readline", '= 0.5.5',                    require: false, platforms: [:mswin, :mingw, :x64_mingw]
+  gem "metadata-json-lint", '>= 2.0.2', '< 4.0.0', require: false
+  gem "parallel_tests", '= 3.12.1',                require: false
   gem "rubocop",  "~> 1.48.1",                     require: false
   gem "rubocop-rspec", "~> 2.19",                  require: false
   gem "rubocop-performance", "~> 1.16",            require: false

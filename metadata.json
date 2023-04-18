@@ -1,7 +1,7 @@
 {
   "name": "puppetlabs-mount_iso",
   "version": "3.0.0",
-  "author": "Puppet Labs",
+  "author": "puppetlabs",
   "summary": "Mount ISO images and ensure the drive letter they are mounted to",
   "license": "Apache-2.0",
   "source": "https://github.com/puppetlabs/puppetlabs-mount_iso",
@@ -10,11 +10,11 @@
   "dependencies": [
     {
       "name": "puppetlabs/stdlib",
-      "version_requirement": ">= 4.6.0 < 7.0.0"
+      "version_requirement": ">= 4.6.0 < 9.0.0"
     },
     {
       "name": "puppetlabs/powershell",
-      "version_requirement": ">= 2.0.0"
+      "version_requirement": ">= 2.0.0 < 6.0.0"
     }
   ],
   "operatingsystem_support": [

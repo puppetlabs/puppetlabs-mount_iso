@@ -1,0 +1,10 @@
+# Offense count: 1
+# Configuration parameters: IgnoredMetadata.
+RSpec/DescribeClass:
+  Exclude:
+    - '**/spec/features/**/*'
+    - '**/spec/requests/**/*'
+    - '**/spec/routing/**/*'
+    - '**/spec/system/**/*'
+    - '**/spec/views/**/*'
+    - 'spec/defines/init_spec.rb'

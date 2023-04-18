@@ -1,13 +1,19 @@
+# frozen_string_literal: true
+
+RSpec.configure do |c|
+  c.mock_with :rspec
+end
+
 require 'puppetlabs_spec_helper/module_spec_helper'
 require 'rspec-puppet-facts'
 
 require 'spec_helper_local' if File.file?(File.join(File.dirname(__FILE__), 'spec_helper_local.rb'))
 
-include RspecPuppetFacts
+include RspecPuppetFacts # rubocop:disable Style/MixinUsage
 
 default_facts = {
   puppetversion: Puppet.version,
-  facterversion: Facter.version,
+  facterversion: Facter.version
 }
 
 default_fact_files = [
@@ -20,7 +26,7 @@ default_fact_files.each do |f|
 
   begin
     default_facts.merge!(YAML.safe_load(File.read(f), [], [], true))
-  rescue => e
+  rescue StandardError => e
     RSpec.configuration.reporter.message "WARNING: Unable to load #{f}: #{e}"
   end
 end
@@ -36,12 +42,23 @@ RSpec.configure do |c|
     # set to strictest setting for testing
     # by default Puppet runs at warning level
     Puppet.settings[:strict] = :warning
+    Puppet.settings[:strict_variables] = true
   end
   c.filter_run_excluding(bolt: true) unless ENV['GEM_BOLT']
   c.after(:suite) do
+    # Filter backtrace noise
+    backtrace_exclusion_patterns = [
+      %r{spec_helper},
+      %r{gems},
+    ]
+
+    if c.respond_to?(:backtrace_exclusion_patterns)
+      c.backtrace_exclusion_patterns = backtrace_exclusion_patterns
+    elsif c.respond_to?(:backtrace_clean_patterns)
+      c.backtrace_clean_patterns = backtrace_exclusion_patterns
+    end
   end
 end
-
 # Ensures that a module is defined
 # @param module_name Name of the module
 def ensure_module_defined(module_name)

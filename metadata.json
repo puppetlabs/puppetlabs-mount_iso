@@ -21,19 +21,18 @@
     {
       "operatingsystem": "Windows",
       "operatingsystemrelease": [
-        "Server 2008 R2",
-        "Server 2012",
-        "Server 2012 R2",
-        "Server 2016",
-        "8",
-        "10"
+        "2012",
+        "2012 R2",
+        "2016",
+        "2019",
+        "2022"
       ]
     }
   ],
   "requirements": [
     {
       "name": "puppet",
-      "version_requirement": ">= 5.5.0 < 7.0.0"
+      "version_requirement": ">= 7.0.0 < 9.0.0"
     }
   ],
   "tags": [
@@ -42,7 +41,7 @@
     "iso",
     "powershell"
   ],
-  "pdk-version": "1.15.0",
-  "template-url": "https://github.com/puppetlabs/pdk-templates#1.15.0",
-  "template-ref": "1.15.0-0-g0bc522e"
+  "pdk-version": "2.7.0",
+  "template-url": "https://github.com/puppetlabs/pdk-templates#main",
+  "template-ref": "heads/main-0-ge5b0114"
 }

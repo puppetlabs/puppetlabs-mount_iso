@@ -4,7 +4,7 @@
 
 1. [Overview](#overview)
 
-2. [Module Description - Mount ISO Images on Windows 8+ / 2012+](#module-description)
+2. [Module Description - Mount ISO Images on Windows 2012+](#module-description)
 
 3. [Setup - The basics of getting started with mount_iso](#setup)
 
@@ -54,6 +54,6 @@ mount_iso { 'C:\MyStagingDir\SQLServer.iso':
 
 ## Limitations
 
-* Only works on Windows 2012, 2012 R2, 8 and 8.1
+* Only works on Windows 2012+.
 
 * If the drive is already occupied by some other volume it will fail to mount the image in that location but will allow it to be mounted on the first available drive letter.

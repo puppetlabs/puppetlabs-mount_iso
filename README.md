@@ -16,6 +16,8 @@
 
 6. [Limitations - OS compatibility, etc.](#limitations)
 
+7. [License](#license)
+
 ## Overview
 
 Ability to automatically mount disk images from within a defined type in order to install certain products on Windows
@@ -57,3 +59,7 @@ mount_iso { 'C:\MyStagingDir\SQLServer.iso':
 * Only works on Windows 2012+.
 
 * If the drive is already occupied by some other volume it will fail to mount the image in that location but will allow it to be mounted on the first available drive letter.
+
+## License
+
+This codebase is licensed under the Apache2.0 licensing, however due to the nature of the codebase the open source dependencies may also use a combination of [AGPL](https://www.gnu.org/licenses/agpl-3.0.en.html), [BSD-2](https://opensource.org/license/bsd-2-claus), [BSD-3](https://opensource.org/license/bsd-3-claus), [GPL2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html), [LGPL](https://opensource.org/license/lgpl-3-0/), [MIT](https://opensource.org/license/mit/) and [MPL](https://opensource.org/license/mpl-2-0/) Licensing.

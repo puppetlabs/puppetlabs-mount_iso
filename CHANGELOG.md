@@ -5,13 +5,17 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org).
 
+## [v4.1.0](https://github.com/puppetlabs/puppetlabs-mount_iso/tree/v4.1.0) - 2024-12-16
+
+[Full Changelog](https://github.com/puppetlabs/puppetlabs-mount_iso/compare/v4.0.3...v4.1.0)
+
 ## [v4.0.3](https://github.com/puppetlabs/puppetlabs-mount_iso/tree/v4.0.3) - 2023-06-05
 
 [Full Changelog](https://github.com/puppetlabs/puppetlabs-mount_iso/compare/v4.0.2...v4.0.3)
 
 ### Fixed
 
-- pdksync - (MAINT) - Update Stdlib dependency [#36](https://github.com/puppetlabs/puppetlabs-mount_iso/pull/36) ([LukasAud](https://github.com/LukasAud))
+- pdksync - (MAINT) - Allow Stdlib 9.x [#36](https://github.com/puppetlabs/puppetlabs-mount_iso/pull/36) ([LukasAud](https://github.com/LukasAud))
 
 ## [v4.0.2](https://github.com/puppetlabs/puppetlabs-mount_iso/tree/v4.0.2) - 2023-05-25
 
@@ -34,6 +38,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 [Full Changelog](https://github.com/puppetlabs/puppetlabs-mount_iso/compare/v3.0.0...v4.0.0)
 
 ### Changed
+
 - (CONT-788) - Add Puppet 8/Drop Puppet 6 [#25](https://github.com/puppetlabs/puppetlabs-mount_iso/pull/25) ([jordanbreen28](https://github.com/jordanbreen28))
 
 ## [v3.0.0](https://github.com/puppetlabs/puppetlabs-mount_iso/tree/v3.0.0) - 2020-01-23
@@ -41,6 +46,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 [Full Changelog](https://github.com/puppetlabs/puppetlabs-mount_iso/compare/2.0.0...v3.0.0)
 
 ### Changed
+
 - (maint) - Update dependency versions [#12](https://github.com/puppetlabs/puppetlabs-mount_iso/pull/12) ([david22swan](https://github.com/david22swan))
 
 ## [2.0.0](https://github.com/puppetlabs/puppetlabs-mount_iso/tree/2.0.0) - 2018-01-17

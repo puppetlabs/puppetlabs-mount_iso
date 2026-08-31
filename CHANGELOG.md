@@ -5,7 +5,15 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org).
 
-## [v5.0.0](https://github.com/puppetlabs/puppetlabs-mount_iso/tree/v5.0.0) - 2026-06-28
+## [v5.1.0](https://github.com/puppetlabs/puppetlabs-mount_iso/tree/v5.1.0) - 2026-08-31
+
+[Full Changelog](https://github.com/puppetlabs/puppetlabs-mount_iso/compare/v5.0.0...v5.1.0)
+
+### Added
+
+- (MODULES-11723) Add Puppet 9 support [#61](https://github.com/puppetlabs/puppetlabs-mount_iso/pull/61) ([imaqsood](https://github.com/imaqsood))
+
+## [v5.0.0](https://github.com/puppetlabs/puppetlabs-mount_iso/tree/v5.0.0) - 2026-06-29
 
 [Full Changelog](https://github.com/puppetlabs/puppetlabs-mount_iso/compare/v4.0.4...v5.0.0)
 

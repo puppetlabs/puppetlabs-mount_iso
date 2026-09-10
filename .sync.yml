@@ -20,3 +20,7 @@ NOTICE:
   delete: true
 appveyor.yml:
   delete: true
+Gemfile:
+  overrides:
+    - gem: 'puppet_litmus'
+      version: '~> 2.0'
